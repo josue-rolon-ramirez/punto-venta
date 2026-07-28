@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+
+.form-background{
+    background-color: #FFF;
+    opacity: .95;
+    border-radius: 10px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    z-index: 2 !important;
+}
+
+.logo-estellita{
+    width: 80px !important;
+    margin-top: -20px;
+}
+
+.img-settings{
+    margin-left:-15px;
+    margin-right: -15px;
+    background-position: center center;
+}
+
+.img-login{
+    position: absolute;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    
+}
+
+.img-home{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    opacity: .85;
+    padding: 0 !important;
+}
+
+.texto-usuario{
+    color: black;
+    font-size: 70px;
+    font-family: 'Berkshire Swash';
+    font-weight: 300;
+    z-index: 1;
+    position:absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black-text-title{
+    color: black;
+    font-size: 70px;
+    font-family: 'Berkshire Swash';
+    font-weight: 300;
+    
+}
+
+.black-text{
+    color: black;
+    font-size: 15px;
+    
+}
+
+.borders-inputs{
+    border-radius: 15px !important;
+    border: 2px solid #FFF !important;
+    background: rgba(178, 178, 178, 0.45) !important;
+    opacity: .9;
+    color: #000 !important;
+}
+
+.borders-inputs::placeholder{
+    color: #000 !important;
+    
+}
+
+.borders-inputs:focus{
+    color: #FFF ;  
+}
+
+
