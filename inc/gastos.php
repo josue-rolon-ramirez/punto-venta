@@ -17,12 +17,12 @@ if (!isset($_SESSION)) exit("<script>window.location.href = '../';</script>");
                 <input data-requerido="true" type="text" id="descripcion" class="form-control"
                        placeholder="Descripción">
             </div>
-            
+            <!--
             <div class="form-group">
                 <label for="no_remision">Número de remisión</label>
                 <input data-requerido="false" type="text" id="no_remision" class="form-control"
                        placeholder="Número de remisión">
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="col-xs-12">

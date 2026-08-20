@@ -10,6 +10,6 @@ require_once RAIZ . "/modulos/db.php";
 require_once RAIZ . "/modulos/gastos/gastos.php";
 $datos_gasto = $_POST["datos_gasto"];
 inicia_sesion_segura();
-$resultado = registrar_gasto($datos_gasto[0], $datos_gasto[1], $datos_gasto[2], $datos_gasto[3], $_SESSION["nombre_de_usuario"]);
+$resultado = registrar_gasto($datos_gasto[0], $datos_gasto[1], $datos_gasto[2], /* $datos_gasto[3], se deja comentada esta linea para que no se registre en la BD */ $_SESSION["nombre_de_usuario"]);
 echo json_encode($resultado);
 ?>

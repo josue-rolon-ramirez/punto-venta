@@ -41,10 +41,10 @@ function dibuja_tabla_caja(datos){
 					
 					$( "<th>" )
 					.html('Descripción'),
-					
+					/*
 					$( "<th>" )
 					.html('Número de remisión'),
-					
+					*/
 					$( "<th>" )
 					.html('Fecha'),
 					
@@ -67,7 +67,7 @@ function dibuja_tabla_caja(datos){
 				$("<td>").html(datos[i].importe),
 				$("<td>").html(datos[i].concepto),
 				$("<td>").html(datos[i].descripcion),
-				$("<td>").html(datos[i].no_remision),
+				$("<td>").html(datos[i].numero_remision),
 				$("<td>").html(datos[i].fecha),
 				$("<td>").html(datos[i].usuario)
 			)

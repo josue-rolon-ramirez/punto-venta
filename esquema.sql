@@ -111,7 +111,7 @@ CREATE TABLE `gastos` (
   `importe` decimal(11,2) unsigned NOT NULL,
   `concepto` text NOT NULL,
   `descripcion` text NOT NULL,
-  `numero_remision` text DEFAULT NULL,
+  /*`numero_remision` text DEFAULT NULL,*/
   `fecha` datetime NOT NULL,
   `usuario` tinytext NOT NULL,
   PRIMARY KEY (`rowid`)

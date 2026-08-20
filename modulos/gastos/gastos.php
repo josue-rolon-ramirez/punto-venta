@@ -1,12 +1,12 @@
 <?php  
-function registrar_gasto( $importe, $concepto, $descripcion, $no_remision, $usuario )
+function registrar_gasto( $importe, $concepto, $descripcion, /*$no_remision,*/ $usuario )
 {
 	global $base_de_datos;
 	$sentencia = $base_de_datos->prepare("insert into gastos 
-		(importe, concepto, descripcion, numero_remision, fecha, usuario)
+		(importe, concepto, descripcion, fecha, usuario)
 		values
-		(?,?,?,?,?,?)");
-	return $sentencia->execute( [$importe, $concepto, $descripcion, $no_remision, date("Y-m-d H:i:s"), $usuario] ) and registrar_gasto_caja( $importe, $usuario);
+		(?,?,?,?,?)");
+	return $sentencia->execute( [$importe, $concepto, $descripcion, /*$no_remision,*/ date("Y-m-d H:i:s"), $usuario] ) and registrar_gasto_caja( $importe, $usuario);
 }
 
 
