@@ -33,20 +33,20 @@ function registrar_gasto() {
             $("#concepto").animateCss("shake");
             return;
         }
-
+        /*
         if (no_remision.length > 0) {
             if (no_remision.length >= 1024) {
                 $("#no_remision").focus().parent().addClass('has-error');
                 $("#no_remision").animateCss("shake");
                 return;
             }
-        }
+        }*/
         deshabilita_para_gastos();
         $("#guardar_gasto")
             .removeClass('btn-success btn-warning')
             .addClass('btn-warning')
             .html('<i class="fa fa-spin fa-spinner"></i> Guardando...');
-        $.post('./modulos/gastos/registrar_gasto.php', {datos_gasto: [importe, concepto, descripcion, no_remision]}, function (respuesta) {
+        $.post('./modulos/gastos/registrar_gasto.php', {datos_gasto: [importe, concepto, descripcion /*no_remision*/]}, function (respuesta) {
             respuesta = JSON.parse(respuesta);
             var mensaje = "";
             if (respuesta === true) {
@@ -107,12 +107,12 @@ function escuchar_elementos() {
         if (evento.keyCode === 13) {
             $("#no_remision").focus();
         }
-    });
+    });/*
     $("#no_remision").keyup(function (evento) {
         if (evento.keyCode === 13) {
             registrar_gasto();
         }
-    });
+    });*/
     $("#guardar_gasto").click(function () {
         registrar_gasto();
     });
