@@ -33,12 +33,12 @@ if (!isset($_SESSION)) exit("<script>window.location.href = '../';</script>");
     <div class="col-xs-4">
         <h4 hidden="hidden" class="text-center"><strong>Ventas:</strong> $<span id="ventas"></span></h4>
     </div>
-    <div class="col-xs-6">
+    <div class="col-xs-12">
         <h3 hidden="hidden" class="text-center"><strong>Total en caja:</strong> $<span id="total_caja"></span></h3>
     </div>
-    <div class="col-xs-6">
+    <?php /* <div class="col-xs-6"> 
         <h3 hidden="hidden" class="text-center"><strong>Utilidad:</strong> $<span id="utilidad"></span></h3>
-    </div>
+    </div>  */ ?>
 </div>
 <div class="row hidden-print">
     <div class="col-xs-12">
