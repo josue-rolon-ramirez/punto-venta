@@ -18,6 +18,7 @@
     margin-left:-15px;
     margin-right: -15px;
     background-position: center center;
+    position: relative;
 }
 
 .img-login{
@@ -49,6 +50,7 @@
     position:absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: 0 0 10px #ffffff, 0 0 10px #ffffff;
 }
 
 .black-text-title{

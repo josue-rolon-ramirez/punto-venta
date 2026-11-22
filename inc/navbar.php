@@ -32,7 +32,7 @@ if (!isset($_SESSION)) exit("<script>window.location.href = '../';</script>");
                         <li><a href="./reportes-caja">Caja</a></li>
                         <li><a href="./reportes-ventas">Ventas</a></li>
                         <li><a href="./reportes-gastos">Gastos</a></li>
-                        <li><a href="./productos-en-stock">Productos en stock</a></li>
+                       <?php /* <li><a href="./productos-en-stock">Productos en stock</a></li> */ ?>
                     </ul>
                 </li>
             </ul>

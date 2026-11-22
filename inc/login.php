@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 col-xs-12 form-background">
-            <h3 class="text-center black-text-title">Semillas y Cereales <br> Estella </h3>
+            <h3 class="text-center black-text-title">Semillas y Cereales <br> Estellita </h3>
                 <div class="col-md-12" style="margin-top:50px">
                  <div class="form-group">
             <label for="usuario" class="black-text">Ingrese nombre de usuario</label>
